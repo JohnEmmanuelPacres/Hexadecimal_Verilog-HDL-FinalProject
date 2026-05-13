@@ -7,12 +7,12 @@
       <elementName>ExternalFile</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>FFPGA</string>
-        </entry>
-        <entry>
           <string>applicationType</string>
           <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>hex_decoder</string>
         </entry>
         <entry>
           <string>externalInputs</string>
@@ -100,7 +100,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>Ground</string>
+          <string>GND</string>
         </entry>
       </elementAttributes>
       <pos x="1360" y="720"/>
@@ -110,7 +110,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>Ground</string>
+          <string>GND</string>
         </entry>
       </elementAttributes>
       <pos x="1480" y="720"/>
