@@ -60,6 +60,7 @@ Open the VS Code terminal and follow these steps:
    gtkwave waveform.vcd
    ```
 4. **Inspect the waveform via GTKWave**:
-   - Click on the testbench in the left panel.
-   - Drag the signals (`bin_in`, `reset`, `seg_tens`, `seg_ones`) into the main viewing window.
-   - Click "**Zoom Fit**" to properly capture your screenshots.
+   - In the top-left pane under "**SST**", click the folder icon next to `tb_hex_decoder`.
+   - The signals (`bin_in`, `reset`, `seg_tens`, `seg_ones`) will appear in the lower-left list.
+   - Select all signals and click the "**Append**" button at the bottom left to add them to the main window.
+   - Click "**Zoom Fit**" (magnifying glass with a dotted square inside) in the top toolbar to display the entire timeline and properly capture your screenshots.
