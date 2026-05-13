@@ -1,4 +1,4 @@
-// Sub-module using Behavioral Modeling
+// Behavioral Modeling
 module hex_to_7seg_logic (
     input [3:0] bin,
     output reg [6:0] tens,
