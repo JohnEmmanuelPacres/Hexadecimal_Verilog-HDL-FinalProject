@@ -19,6 +19,8 @@ To run the simulation and logic synthesis successfully, everyone needs the follo
    - This installs automatically alongside Icarus Verilog.
 3. **Digital (by HNEEMANN)**
    - _Used for graphical circuit simulation._
+   - Download the latest release from the [HNEEMANN/Digital GitHub releases page](https://github.com/hneemann/Digital/releases).
+   - Extract the ZIP and run `Digital.exe` (Windows) or `Digital.jar` (Java environment).
 4. **Intel Quartus Prime Lite (v25.1)**
    - _Used for logic synthesis, pin planning, and flashing the code to the MAX II board._
    - Install via Web Installer or Individual Files.
@@ -35,12 +37,15 @@ Below are the two primary simulation workflows to help you verify the logic loca
 
 ### Workflow 1: Visual Simulation via Digital GUI
 
-Use this workflow to test the logic visually with interactive switches.
+Use this workflow to test the logic visually with interactive switches directly within the Digital environment.
 
-1. Ensure **Icarus Verilog (v11)** is installed and added to your system PATH.
-2. Open `main_simulation.dig` using the Digital tool.
-3. Click the green **Play (►)** button in the top toolbar.
-4. Toggle the 4-bit `bin_in` switch component to observe and verify the dual 7-segment outputs from `00` through `FF`.
+1. Ensure **Icarus Verilog (v11)** is installed and added to your system PATH (required for simulating external Verilog modules).
+2. Launch the **Digital** application (`Digital.exe` or `Digital.jar`).
+3. In Digital, go to **File > Open**, navigate to your repository folder, and select `main_simulation.dig`.
+4. Click the green **Play (►)** button in the top toolbar to start the simulation.
+5. Use the mouse to interactively click and toggle the 4-bit `bin_in` switch components.
+6. Observe and verify the dual 7-segment outputs correspond to the hexadecimal values from `00` through `FF`.
+7. Once finished, click the red **Stop (■)** button in the top toolbar.
 
 ### Workflow 2: Waveform Generation via CLI (Deliverable 3)
 
@@ -62,5 +67,6 @@ Open the VS Code terminal and follow these steps:
 4. **Inspect the waveform via GTKWave**:
    - In the top-left pane under "**SST**", click the folder icon next to `tb_hex_decoder`.
    - The signals (`bin_in`, `reset`, `seg_tens`, `seg_ones`) will appear in the lower-left list.
-   - Select all signals and click the "**Append**" button at the bottom left to add them to the main window.
+   - Select all signals and click the "**Append**" button at the bottom left (or double-click each signal) to add them to the main window.
+   - **To see individual segments turning on (High) and off (Low):** Double-click the `seg_tens` and `seg_ones` signal names in the main viewer to expand the bus and visualize each individual bit forming the display.
    - Click "**Zoom Fit**" (magnifying glass with a dotted square inside) in the top toolbar to display the entire timeline and properly capture your screenshots.
